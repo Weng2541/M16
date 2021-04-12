@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <style>
+    p {
+      color: #d81f1f;
+      margin: 50px auto 30px;
+      font-family: 'Train one', cursive;;
+      
+    }
+    h1 {
+      color: #1ad16c;
+      margin: 50px auto 30px;
+      animation-duration: 2s;
+    }
+
+    h2 {
+      color: #350dc7;
+      margin-bottom: 50px;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "9d698065-f1c5-44bf-8f69-35bfef1099cb", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "a316b904-54a7-44de-a893-b34931c28fa7", // The ID of your service instance.
+      onLoad: function (instance) { instance.render(); }
+    };
+    setTimeout(function () {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</head>
+
+<body>
+  <button type="button" class="btn btn-primary">Home</button>
+  <button type="button" class="btn btn-secondary">Products</button>
+  <button type="button" class="btn btn-success">Ordering</button>
+  <button type="button" class="btn btn-danger">Shippment Tracking</button>
+  <button type="button" class="btn btn-warning">Feedback</button>
+  <button type="button" class="btn btn-info">Contact</button>
+  <button type="button" class="btn btn-light">Suport</button>
+  
+  <button type="button" class="btn btn-link">Link</button>
+  
+  
+  <h1>Welcome!</h1>
+  <p><h1 class="animate__animated animate__bounce">This content is served to you by....</p>
+    <div class="animate__animated animate__bounce animate__delay-2s"></div>
+  <h2>The server</h2>
+
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+  
+
+  <h1> The weather in {{Singapore}} is {{weather}} </h1>
+  <a href="https://github.com/VincentK16" target="_blank">My GitHub</a>
+  <img src="./static/ubtt.jpg" alt="UBTT">
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/jwZh3ggSG90" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="container-md">
+        <figure class="figure">
+          <img src=".\static\images.jpg" class="figure-img img-fluid rounded" alt="images">
+          <figcaption class="figure-caption text-start">Pre-Owned Royal Oak Offshore Tourbillon Chronograph</figcaption>
+        </figure>
+      
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="container-md">
+        <figure class="figure">
+          <img src=".\static\images (1).jpg" class="figure-img img-fluid rounded" alt="images (1)">
+          <figcaption class="figure-caption text-start">Royal Oak Offshore Arnold's All Stars Governor's Edition</figcaption>
+        </figure>
+      
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="container-md">
+        <figure class="figure">
+          <img src=".\static\images (2).jpg" class="figure-img img-fluid rounded" alt="images (2)">
+          <figcaption class="figure-caption text-start">Big Bang Unico King Gold Blue</figcaption>
+        </figure>
+      
+      </div>
+    </div>
+  </div>
+</div>
+  
+</body>
+
+</html>
